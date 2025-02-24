@@ -19,7 +19,7 @@ namespace ConexionSQL
         {
             try
             {
-                DB_CONN = new SqlConnection(ConfigurationManager.ConnectionStrings["ConexionDB"].ConnectionString);
+                DB_CONN = new SqlConnection(ConfigurationManager.ConnectionStrings["ConexionDB"].ConnectionString + ";MultipleActiveResultSets=True");
                 DB_CONN.Open();
             }
             catch (Exception ex)

@@ -16,5 +16,16 @@ namespace ConexionSQL
         {
             InitializeComponent();
         }
+
+        //Declarar cada formulario
+        FrmCliente Cliente;
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            //Llamar cada formulario
+            Cliente = new FrmCliente();
+            Cliente.Show();
+            this.Hide();
+        }
     }
 }
